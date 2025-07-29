@@ -25,7 +25,7 @@ curl -Ls https://astral.sh/uv/install.sh | sh
 
 3. Navigate Navigate to the project directory and install dependencies:
 ```bash
-    cd viewengine
+    cd article_enricher
 ```
 ```bash
 uv sync
