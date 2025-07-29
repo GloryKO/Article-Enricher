@@ -26,6 +26,11 @@ git clone https://github.com/GloryKO/Article-Enricher.git article_enricher
 curl -Ls https://astral.sh/uv/install.sh | sh
 ```
 
+run :
+
+```bash
+  source ~/.zshrc
+```
 3. Navigate Navigate to the project directory and install dependencies:
 ```bash
     cd article_enricher
@@ -68,7 +73,7 @@ uv run python main.py
 Run the enrichment pipeline:
 
 ```bash
-uv run python run.py --article_path data/article_1.md --keywords_path data/keywords_1.txt #you can use any article and keywords file
+uv run python run.py --article_path data/article_1.md --keywords_path data/keywords_1.txt
 ```
 
 ### Input Files
