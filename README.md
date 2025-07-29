@@ -16,7 +16,10 @@ The Article Enricher takes a markdown article and a list of keywords, then:
 
 ## Installation
 
-1. Clone or download the project
+1. Clone or download the project 
+```bash
+git clone https://github.com/GloryKO/Article-Enricher.git article_enricher
+```
 2. Install `uv`(if you haven't already):
 
 ```bash
