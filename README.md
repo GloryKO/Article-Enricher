@@ -65,7 +65,7 @@ uv run python main.py
 Run the enrichment pipeline:
 
 ```bash
-uv run python run.py --article_path data/article_1.md --keywords_path data/keywords_1.txt
+uv run python run.py --article_path data/article_1.md --keywords_path data/keywords_1.txt #you can use any article and keywords file
 ```
 
 ### Input Files
