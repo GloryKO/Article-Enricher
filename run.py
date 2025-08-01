@@ -14,13 +14,12 @@ def main(article_path, keywords_path):
     # Get matching assets
     links = db_utils.get_links_for_keywords(keywords, db_path="links.db")
     images = db_utils.get_images_for_keywords(keywords, db_path="media.db")
-    logger.info("Found links:",links)
-    logger.info("Found images:",images)
+    logger.info(f"Found links: {links}")
+    logger.info(f"Found images: {images}")
     # Build prompt
     prompt = prompt_builder.build_prompt(article_text, keywords, links, images, brand_rules)
    
-    logger.info("Generated prompt:",prompt)
-  
+    logger.info(f"Generated prompt:\n{prompt}")
     logger.info("\nSending to LLM...\n")
     enriched_markdown = llm_client.call_llm(prompt)
 
